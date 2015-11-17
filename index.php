@@ -1,5 +1,5 @@
 <?php
-require 'src/Fipe.php';
+require 'src/Fipe/Fipe.php';
 
 use Fipe\Fipe;
 
@@ -11,8 +11,8 @@ if($marcas){
     foreach($marcas as $marca){
         echo $marca->nome;
         $modelos = $Fipe->getModelos($marca->codigo);
-        if($modelos){
-            foreach($modelos as $modelo){
+        if($modelos->modelos){
+            foreach($modelos->modelos as $modelo){
                 echo $modelo->nome;
                 $anos = $Fipe->getAnos($marca->codigo, $modelo->codigo);
                 if($anos){
