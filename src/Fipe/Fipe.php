@@ -4,7 +4,7 @@ namespace Fipe;
 
 class Fipe
 {
-    private $uri = "http://localhost/fipe/api/v1/";
+    private $uri = "https://fipe-parallelum.rhcloud.com/api/v1/";
     private $tipo;
     const CARRO = 1;
     const CAMINHAO = 3;
