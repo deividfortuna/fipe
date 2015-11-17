@@ -1,0 +1,12 @@
+{
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "FipeApi\\": [
+        "src/",
+        "tests/"
+      ]
+    }
+  }
+}
