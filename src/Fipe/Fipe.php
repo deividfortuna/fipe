@@ -28,13 +28,17 @@ class Fipe
             $ch = curl_init($uri);
             $options = array(
                 CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_FOLLOWLOCATION => 1
+                CURLOPT_FOLLOWLOCATION => 1,
+                CURLOPT_TIMEOUT => 5,
+                CURLOPT_CONNECTTIMEOUT => 5,
+                CURLOPT_SSL_VERIFYPEER => 0,
             );
             curl_setopt_array($ch, $options);
             $html = curl_exec($ch);
+            $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
 
-            return json_decode($html);
+            return ($httpcode>=200 && $httpcode<300) ? json_decode($html) : false;
         } catch(\Exception $e) {
             return false;
         }
