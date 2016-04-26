@@ -1,4 +1,7 @@
 {
+  "name": "deividfortuna/fipe",
+  "description": "Tabela Fipe Lib",
+  "version": "0.0.1",
   "require": {
   },
   "require-dev": {

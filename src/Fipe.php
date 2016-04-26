@@ -8,7 +8,7 @@ class Fipe
     private $uri = 'https://fipe-parallelum.rhcloud.com/api/v1/';
     private $supportedTypes = [
         'carros',
-        'caminhaos',
+        'caminhoes',
         'motos',
     ];
 
