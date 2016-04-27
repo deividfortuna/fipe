@@ -10,9 +10,9 @@ class FipeTest extends PHPUnit
     public function testTypeHandler()
     {
         $fipe = new Fipe('carros');
-        $this->assertEquals('carros', $fipe->getTipo());
-        $fipe->setTipo('motos');
-        $this->assertEquals('motos', $fipe->getTipo());
+        $this->assertEquals('carros', $fipe->getType());
+        $fipe->setType('motos');
+        $this->assertEquals('motos', $fipe->getType());
     }
 
     public function testGetBrands()
