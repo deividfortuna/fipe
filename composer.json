@@ -1,12 +1,15 @@
 {
+  "name": "deividfortuna/fipe",
+  "description": "Tabela Fipe Lib",
+  "version": "0.0.1",
   "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
   },
   "autoload": {
     "psr-4": {
-      "Fipe\\": [
-        "src/",
-        "tests/"
-      ]
+      "Fipe\\": "src/"
     }
   }
 }

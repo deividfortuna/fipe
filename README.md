@@ -1,30 +1,60 @@
-# FIPE LIB
-Biblioteca para tabela Fipe
+# FipeLib
+> Biblioteca em PHP para tabela Fipe :moneybag:
 
-## Documentação FIPE API HTTP REST
+## Documentação da API utilizada
 
-http://deividfortuna.github.io/fipe/
+[Neste link](http://deividfortuna.github.io/fipe/) é possível encontrar a documentação da API que foi é utilizada por este pacote. Ela também se encontra no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
 
-## Uso
-No arquivo index.php existe um exemplo de uso da biblioteca
+## Utilização
 
-## Copyright (c) 2015 Deivid Fortuna
+Instale o pacote via composer:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+```
+$ composer require deividfortuna/fipe
+```
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+Utilize-o:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+~~~php
+<?php
 
+use Fipe\Fipe;
+
+$type = 'carros'; // 'carros', 'motos', 'caminhoes'
+$fipe = new Fipe($type);
+
+$fipe->getMarcas();
+~~~
+
+O código acima, retornaria algo como:
+
+~~~json
+[
+  {
+    "nome": "Acura",
+    "codigo": 1
+  },
+  {
+    "nome": "Agrale",
+    "codigo": 2
+  }
+]
+~~~
+
+## API
+
+#### `getMarcas()`
+Retorna um Json com a lista de marcas.
+
+#### `getModelos($idMarca)`
+Retorna um Json com a lista de modelos de uma determinada marca.
+
+#### `getAnos($idMarca, $idModelo)`
+Retorna um Json com a lista de anos de um determinado modelo e de uma determinada marca.
+
+#### `getVeiculo($idMarca, $idModelo, $idAno)`
+Retorna um Json com os detalhes do veículo da marca, modelo e ano escolhido.
+
+## Licença
+
+Copyright (c) 2015 [Deivid Fortuna](https://github.com/deividfortuna/fipe/blob/master/LICENSE.md)
