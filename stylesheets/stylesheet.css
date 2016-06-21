@@ -47,6 +47,12 @@ code {
  */
 
 
+.dark {
+    background: #333;
+}
+.json-formatter-dark {
+  margin-top: 4px;
+}
 .json-formatter-row {
   font-family: monospace;
 }
