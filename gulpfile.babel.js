@@ -10,8 +10,8 @@ gulp.task('bs-reload', () => {
 gulp.task('concat:libs', ()=>{
   gulp.src([
     './bower_components/angular/angular.min.js',
-    './bower_components/angular-bootstrap/ui-bootstrap-tpls.min .js',
-    ';/bower_components/json-formatter/dist/json-formatter.min.js'
+    './bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+    './bower_components/json-formatter/dist/json-formatter.min.js'
   ])
   .pipe(concat('libs.js'))
   .pipe(gulp.dest('./'))
