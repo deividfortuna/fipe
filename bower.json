@@ -1,0 +1,22 @@
+{
+  "name": "fipe",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Deivid Fortuna"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/deividfortuna/fipe",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "json-formatter": "^0.6.0",
+    "angular-bootstrap": "^1.3.3"
+  }
+}
