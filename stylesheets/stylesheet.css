@@ -38,7 +38,9 @@ code {
   font-size: 80%;
 }
 
-
+p.lead {
+    margin-top: 20px;
+}
 /*!
  * jsonformatter
  * 
