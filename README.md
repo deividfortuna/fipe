@@ -39,7 +39,7 @@ O código acima, retornaria algo como:
 ]
 ~~~
 
-Também é possível buscar motos e caminhões com as classes `FipeCaminhoes` e `FipeMotos` respectivamente.
+Também é possível buscar motos e caminhões com as classes `FipeMotos` e `FipeCaminhoes` respectivamente.
 
 ## API
 
