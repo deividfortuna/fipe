@@ -1,9 +1,9 @@
 # FipeLib
-> Biblioteca em PHP para tabela Fipe :moneybag:
+> Biblioteca em PHP para consultar a tabela Fipe :moneybag:
 
 ## Documentação da API utilizada
 
-[Neste link](http://deividfortuna.github.io/fipe/) é possível encontrar a documentação da API que foi é utilizada por este pacote. Ela também se encontra no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
+[Neste link](http://deividfortuna.github.io/fipe/) é possível encontrar a documentação da API utilizada por esta biblioteca. Ela também se encontra no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
 
 ## Utilização
 
@@ -17,13 +17,11 @@ Utilize-o:
 
 ~~~php
 <?php
+use DeividFortuna\Fipe\FipeCarros;
 
-use Fipe\Fipe;
+$marcas = FipeCarros::getMarcas();
 
-$type = 'carros'; // 'carros', 'motos', 'caminhoes'
-$fipe = new Fipe($type);
-
-$fipe->getMarcas();
+var_dump($marcas);
 ~~~
 
 O código acima, retornaria algo como:
@@ -41,6 +39,8 @@ O código acima, retornaria algo como:
 ]
 ~~~
 
+Também é possível buscar motos e caminhões com as classes `FipeCaminhoes` e `FipeMotos` respectivamente.
+
 ## API
 
 #### `getMarcas()`
@@ -57,4 +57,4 @@ Retorna um Json com os detalhes do veículo da marca, modelo e ano escolhido.
 
 ## Licença
 
-Copyright (c) 2015 [Deivid Fortuna](https://github.com/deividfortuna/fipe/blob/master/LICENSE.md)
+Copyright (c) 2016 [Deivid Fortuna](https://github.com/deividfortuna/fipe/blob/master/LICENSE.md)

@@ -2,19 +2,18 @@
 
 namespace DeividFortuna\Fipe\Tests;
 
-use DeividFortuna\Fipe\Caminhoes;
-use DeividFortuna\Fipe\Carros;
-use DeividFortuna\Fipe\Motos;
+use DeividFortuna\Fipe\FipeCaminhoes;
+use DeividFortuna\Fipe\FipeCarros;
+use DeividFortuna\Fipe\FipeMotos;
 use PHPUnit_Framework_TestCase as PHPUnit;
 
 class FipeTest extends PHPUnit
 {
     public function testGetMarcas()
     {
-        $marcasDeCaminhoes = (new Caminhoes())->getMarcas();
-        $marcasDeCarros    = (new Carros())->getMarcas();
-        $marcasDeMotos     = (new Motos())->getMarcas();
-
+        $marcasDeCaminhoes = FipeCaminhoes::getMarcas();
+        $marcasDeCarros    = FipeCarros::getMarcas();
+        $marcasDeMotos     = FipeMotos::getMarcas();
         $this->assertEquals(true, is_array($marcasDeCaminhoes));
         $this->assertEquals(true, is_array($marcasDeCarros));
         $this->assertEquals(true, is_array($marcasDeMotos));
@@ -22,26 +21,32 @@ class FipeTest extends PHPUnit
 
     public function testGetModelos()
     {
-        $motos   = new Motos();
-        $modelos = $motos->getModelos(80);
-
+        $modelos = FipeMotos::getModelos(80);
         $this->assertInternalType('object', $modelos);
     }
 
     public function testGetAnos()
     {
-        $motos = new Motos();
-        $anos  = $motos->getAnos(80, 3841);
-
+        $anos = FipeMotos::getAnos(80, 3841);
         $this->assertInternalType('array', $anos);
         $this->assertNotEquals(0, count($anos));
     }
 
+    public function testGetAnosInvalido()
+    {
+        $anos = FipeMotos::getAnos(0, 0);
+        $this->assertEquals(false, $anos);
+    }
+
     public function testGetVeiculo()
     {
-        $motos   = new Motos();
-        $veiculo = $motos->getVeiculo(80, 3841, '2015-1');
-
+        $veiculo = FipeMotos::getVeiculo(80, 3841, '2015-1');
         $this->assertInternalType('object', $veiculo);
+    }
+
+    public function testGetVeiculoInvalido()
+    {
+        $veiculo = FipeMotos::getVeiculo(0, 0, 0);
+        $this->assertEquals(false, $veiculo);
     }
 }

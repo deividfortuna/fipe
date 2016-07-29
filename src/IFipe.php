@@ -4,18 +4,18 @@ namespace DeividFortuna\Fipe;
 
 abstract class IFipe
 {
-    const URI = 'https://fipe-parallelum.rhcloud.com/api/v1/';
+    const URL = 'https://fipe-parallelum.rhcloud.com/api/v1/';
 
     /**
      * @var string
      */
-    protected $tipo;
+    protected static $tipo;
 
     /**
      * @param string $uri
      * @return mixed|false
      */
-    protected function request($uri)
+    protected static function request($uri)
     {
         $curlOptions = [
             CURLOPT_RETURNTRANSFER => true,
@@ -34,27 +34,27 @@ abstract class IFipe
         return ($httpCode >= 200 && $httpCode < 300) ? json_decode($html) : false;
     }
 
-    public function getMarcas()
+    public static function getMarcas()
     {
-        $uri = self::URI.$this->tipo.'/marcas';
-        return $this->request($uri);
+        $uri = self::URL.static::$tipo.'/marcas';
+        return self::request($uri);
     }
 
-    public function getModelos($idMarca)
+    public static function getModelos($idMarca)
     {
-        $uri = self::URI.$this->tipo.'/marcas/'.$idMarca.'/modelos';
-        return $this->request($uri);
+        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos';
+        return static::request($uri);
     }
 
-    public function getAnos($idMarca, $idModelo)
+    public static function getAnos($idMarca, $idModelo)
     {
-        $uri = self::URI.$this->tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos';
-        return $this->request($uri);
+        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos';
+        return static::request($uri);
     }
 
-    public function getVeiculo($idMarca, $idModelo, $idAno)
+    public static function getVeiculo($idMarca, $idModelo, $idAno)
     {
-        $uri = self::URI.$this->tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos/'.$idAno;
-        return $this->request($uri);
+        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos/'.$idAno;
+        return static::request($uri);
     }
 }
