@@ -22,14 +22,13 @@ class FipeTest extends PHPUnit
     public function testGetModelos()
     {
         $modelos = FipeMotos::getModelos(80);
-        $this->assertInternalType('object', $modelos);
+        $this->assertEquals(true, is_array($modelos));
     }
 
     public function testGetAnos()
     {
         $anos = FipeMotos::getAnos(80, 3841);
-        $this->assertInternalType('array', $anos);
-        $this->assertNotEquals(0, count($anos));
+        $this->assertEquals(true, is_array($anos));
     }
 
     public function testGetAnosInvalido()
@@ -41,7 +40,7 @@ class FipeTest extends PHPUnit
     public function testGetVeiculo()
     {
         $veiculo = FipeMotos::getVeiculo(80, 3841, '2015-1');
-        $this->assertInternalType('object', $veiculo);
+        $this->assertEquals(true, is_array($veiculo));
     }
 
     public function testGetVeiculoInvalido()
