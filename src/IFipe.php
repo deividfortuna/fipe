@@ -31,7 +31,7 @@ abstract class IFipe
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
-        return ($httpCode >= 200 && $httpCode < 300) ? json_decode($html) : false;
+        return ($httpCode >= 200 && $httpCode < 300) ? json_decode($html, true) : false;
     }
 
     public static function getMarcas()
@@ -40,21 +40,21 @@ abstract class IFipe
         return self::request($uri);
     }
 
-    public static function getModelos($idMarca)
+    public static function getModelos($codMarca)
     {
-        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos';
+        $uri = self::URL.static::$tipo.'/marcas/'.$codMarca.'/modelos';
         return static::request($uri);
     }
 
-    public static function getAnos($idMarca, $idModelo)
+    public static function getAnos($codMarca, $codModelo)
     {
-        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos';
+        $uri = self::URL.static::$tipo.'/marcas/'.$codMarca.'/modelos/'.$codModelo.'/anos';
         return static::request($uri);
     }
 
-    public static function getVeiculo($idMarca, $idModelo, $idAno)
+    public static function getVeiculo($codMarca, $codModelo, $codAno)
     {
-        $uri = self::URL.static::$tipo.'/marcas/'.$idMarca.'/modelos/'.$idModelo.'/anos/'.$idAno;
+        $uri = self::URL.static::$tipo.'/marcas/'.$codMarca.'/modelos/'.$codModelo.'/anos/'.$codAno;
         return static::request($uri);
     }
 }
