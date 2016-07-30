@@ -14,7 +14,7 @@ A biblioteca possui 3 classes para consultar a tabela Fipe, uma para cada tipo d
 Cada classe possui os seguintes métodos:
 * `getMarcas()` retorna um array com os códigos e nomes das marcas do tipo de veículo escolhido
 * `getModelos($codMarca)` retorna um array com o códigos e nomes dos modelos da marca informada
-* `getAnos($codMarca, $codModelo)` retorna um array com os códigos e nomes dos anos de um determinado modelo e marca
+* `getAnos($codMarca, $codModelo)` retorna um array com os códigos e nomes dos anos de um modelo de veículo
 * `getVeiculo($codMarca, $codModelo, $codAno)` retorna um array com os dados da tabela Fipe do veículo especificado
 
 ## Exemplos de uso
