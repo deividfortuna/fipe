@@ -1,15 +1,30 @@
 {
   "name": "deividfortuna/fipe",
   "description": "Tabela Fipe Lib",
-  "version": "0.0.1",
+  "version": "2.0.0",
+  "authors": [
+    {
+      "name": "Deivid Fortuna",
+      "email": "deividfortuna@gmail.com"
+    },
+    {
+      "name": "Alison Monteiro",
+      "email": "hi@alisonmonteiro.com.br"
+    },
+    {
+      "name": "Felipe Torretto",
+      "email": "toreti@gmail.com"
+    }
+  ],
   "require": {
+    "php": ">=5.3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.8"
   },
   "autoload": {
     "psr-4": {
-      "Fipe\\": "src/"
+      "DeividFortuna\\Fipe\\": "src/"
     }
   }
 }
