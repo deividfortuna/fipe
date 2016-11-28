@@ -4,9 +4,9 @@ require '../vendor/autoload.php';
 use DeividFortuna\Fipe\FipeCarros;
 
 try {
-    $codMarca  = filter_input(INPUT_GET, 'codMarca');
+    $codMarca = filter_input(INPUT_GET, 'codMarca');
     $codModelo = filter_input(INPUT_GET, 'codModelo');
-    $codAno    = filter_input(INPUT_GET, 'codAno');
+    $codAno = filter_input(INPUT_GET, 'codAno');
 
     $marcas = FipeCarros::getMarcas();
     if ($codMarca) {
@@ -52,7 +52,9 @@ try {
     }
 </style>
 <body>
-<p>Exemplo de consulta de carros na Fipe<?php if (!$codMarca) echo ', clique em uma marca para iniciar' ?>.</p>
+<p>Exemplo de consulta de carros na Fipe<?php if (!$codMarca) {
+    echo ', clique em uma marca para iniciar';
+} ?>.</p>
 <table>
     <tr>
         <td valign="top">
@@ -65,7 +67,8 @@ try {
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($marcas as $marca) { ?>
+                <?php foreach ($marcas as $marca) {
+    ?>
                     <tr>
                         <td align="right">
                             <?php echo $marca['codigo'] ?>
@@ -74,11 +77,13 @@ try {
                             <a href="?codMarca=<?php echo $marca['codigo'] ?>"><?php echo $marca['nome'] ?></a>
                         </td>
                     </tr>
-                <?php } ?>
+                <?php 
+} ?>
                 </tbody>
             </table>
         </td>
-        <?php if (isset($modelos)) { ?>
+        <?php if (isset($modelos)) {
+    ?>
             <td valign="top">
                 <strong>Modelos</strong>
                 <table>
@@ -89,19 +94,23 @@ try {
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($modelos as $modelo) { ?>
+                    <?php foreach ($modelos as $modelo) {
+        ?>
                         <tr>
                             <td align="right"><?php echo $modelo['codigo'] ?></td>
                             <td>
                                 <a href="<?php echo "?codMarca={$codMarca}&codModelo={$modelo['codigo']}" ?>"><?php echo $modelo['nome'] ?></a>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php 
+    } ?>
                     </tbody>
                 </table>
             </td>
-        <?php } ?>
-        <?php if (isset($anos)) { ?>
+        <?php 
+} ?>
+        <?php if (isset($anos)) {
+    ?>
             <td valign="top">
                 <strong>Anos</strong>
                 <table>
@@ -112,24 +121,29 @@ try {
                     </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($anos as $ano) { ?>
+                    <?php foreach ($anos as $ano) {
+        ?>
                         <tr>
                             <td align="right"><?php echo $ano['codigo'] ?></td>
                             <td>
                                 <a href="<?php echo "?codMarca={$codMarca}&codModelo={$codModelo}&codAno={$ano['codigo']}" ?>"><?php echo $ano['nome'] ?></a>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php 
+    } ?>
                     </tbody>
                 </table>
             </td>
-        <?php } ?>
-        <?php if (isset($veiculo)) { ?>
+        <?php 
+} ?>
+        <?php if (isset($veiculo)) {
+    ?>
             <td valign="top">
                 <strong>Veículo</strong>
                 <?php echo var_dump($veiculo) ?>
             </td>
-        <?php } ?>
+        <?php 
+} ?>
     </tr>
 </table>
 </body>
