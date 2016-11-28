@@ -12,8 +12,8 @@ class FipeTest extends PHPUnit
     public function testGetMarcas()
     {
         $marcasDeCaminhoes = FipeCaminhoes::getMarcas();
-        $marcasDeCarros    = FipeCarros::getMarcas();
-        $marcasDeMotos     = FipeMotos::getMarcas();
+        $marcasDeCarros = FipeCarros::getMarcas();
+        $marcasDeMotos = FipeMotos::getMarcas();
         $this->assertEquals(true, is_array($marcasDeCaminhoes));
         $this->assertEquals(true, is_array($marcasDeCarros));
         $this->assertEquals(true, is_array($marcasDeMotos));
