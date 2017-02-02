@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>FIPE API HTTP REST</title>
-    
+
     <link href="stylesheets/stylesheet.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
@@ -152,26 +152,26 @@ Por exemplo <strong>AMAROK High.CD 2.0 16V TDI 4x4 Dies. Aut</strong>:
         {
         "nome": "2015 Diesel",
         "codigo": "2015-3"
-        }... 
+        }...
       ]
     </code></p> -->
     <p class="lead">Valor</p>
     <p>Por fim adicionando mais um parâmetro será possível visualizar o preço corrente da Tabela FIPE para este veículo/modelo/ano. Continuando com o exemplo a cima para obter o valor de um veículo do ano 2014 a Gasolina utilizaremos o id <strong>2014-3</strong>:</p>
     <mark>Request</mark>
-    <p><code>GET: https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas/59/modelos/5940/anos/2014-3</code></p>
+    <p><code>GET: https://fipe-parallelum.rhcloud.com/api/v1/carros/marcas/59/modelos/5940/anos/2014-1</code></p>
     <mark>Reponse</mark>
     <json-formatter json="ctrl.veiculo" open="3" class="json-formatter-dark dark"></json-formatter>
     <!-- <p><code>{
-      "Valor": "R$ 119.019,00",
+      "Valor": "R$ 106.138,00",
       "Marca": "VW - VolksWagen",
       "Modelo": "AMAROK High.CD 2.0 16V TDI 4x4 Dies. Aut",
       "AnoModelo": 2014,
-      "Combustivel": "Diesel",
+      "Combustivel": "Gasolina",
       "CodigoFipe": "005340-6  ",
-      "MesReferencia": "November de 2015 ",
+      "MesReferencia": "fevereiro de 2017",
       "TipoVeiculo": 1,
-      "SiglaCombustivel": "D"
-}</code></p> -->
+      "SiglaCombustivel": "G"
+  }</code></p> -->
   <p>Com isto descubrimos os detalhes do veículo <strong>AMAROK High.CD 2.0 16V TDI 4x4 Dies. Aut</strong> ano <strong>2014</strong> a <strong>Diesel</strong>.</p>
   <div>
     <h2>Problemas & Sugestões</h2>
