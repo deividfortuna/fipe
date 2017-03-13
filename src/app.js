@@ -17,7 +17,7 @@
 				return $http.get(url + '/carros/marcas/59/modelos/5940/anos');
 			},
 			getVeiculo: () => {
-				return $http.get(url + '/carros/marcas/59/modelos/5940/anos/2014-1');	
+				return $http.get(url + '/carros/marcas/59/modelos/5940/anos/2014-3');	
 			}
 		}
 	}]);
