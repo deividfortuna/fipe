@@ -4,7 +4,7 @@
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
 ## IMPORTANTE
-Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuíto o serviço continuara indisponivel. Se você tem alguma ideia ou interesse comercial, por favor não deixe de entrar em contato.
+Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível. Se você tem alguma idéia ou interesse comercial, por favor não deixe de entrar em contato. 
 
 ## API utilizada
 
