@@ -2,6 +2,7 @@
   "name": "deividfortuna/fipe",
   "description": "Tabela Fipe Lib",
   "version": "2.1.1",
+  "license": "MIT",
   "authors": [
     {
       "name": "Deivid Fortuna",
