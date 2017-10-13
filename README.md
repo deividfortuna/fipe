@@ -5,6 +5,7 @@
 
 ## IMPORTANTE
 13/10/2017: A API foi movida para um servidor privado
+
 06/10/2017: Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível.
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/TDezaLiy2b4PrW1Mz5TK7p5M/deividfortuna/fipe'>
