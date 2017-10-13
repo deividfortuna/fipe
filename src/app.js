@@ -4,7 +4,7 @@
 	const app = angular.module('app', ['jsonFormatter']);
 
 	app.service('FipeService', ['$http', function($http){
-		const url = 'http://fipe.epizy.com/api/v1';
+		const url = 'https://fipe.parallelum.com.br/api/v1';
 
 		return {
 			getMarcas: () => {
