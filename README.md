@@ -3,12 +3,13 @@
 
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
+## IMPORTANTE
+13/10/2017: A API foi movida para um servidor privado
+06/10/2017: Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível.
+
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/TDezaLiy2b4PrW1Mz5TK7p5M/deividfortuna/fipe'>
   <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/TDezaLiy2b4PrW1Mz5TK7p5M/deividfortuna/fipe.svg' />
 </a>
-
-## IMPORTANTE
-Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível. Se você tem alguma idéia ou interesse comercial, por favor não deixe de entrar em contato. 
 
 ## API utilizada
 
