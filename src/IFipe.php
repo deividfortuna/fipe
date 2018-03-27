@@ -4,7 +4,7 @@ namespace DeividFortuna\Fipe;
 
 abstract class IFipe
 {
-    const URL = 'https://fipe.parallelum.com.br/api/v1';
+    const URL = 'https://parallelum.com.br/fipe/api/v1';
 
     /**
      * @var string

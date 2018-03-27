@@ -4,6 +4,8 @@
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
 ## IMPORTANTE
+26/03/2017: Mudança de servidor. URL base alterada para: `https://parallelum.com.br/fipe/api/v1`
+
 13/10/2017: A API foi movida para um servidor privado
 
 06/10/2017: Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível.
