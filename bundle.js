@@ -6,7 +6,7 @@
 	var app = angular.module('app', ['jsonFormatter']);
 
 	app.service('FipeService', ['$http', function ($http) {
-		var url = 'https://fipe.parallelum.com.br/api/v1';
+		var url = 'https://parallelum.com.br/fipe/api/v1';
 
 		return {
 			getMarcas: function getMarcas() {
