@@ -5,6 +5,7 @@ namespace DeividFortuna\Fipe\Tests;
 use DeividFortuna\Fipe\FipeCaminhoes;
 use DeividFortuna\Fipe\FipeCarros;
 use DeividFortuna\Fipe\FipeMotos;
+use DeividFortuna\Fipe\IFipe;
 use PHPUnit_Framework_TestCase as PHPUnit;
 
 class FipeTest extends PHPUnit
@@ -47,5 +48,9 @@ class FipeTest extends PHPUnit
     {
         $veiculo = FipeMotos::getVeiculo(0, 0, 0);
         $this->assertEquals(false, $veiculo);
+    }
+
+    public function basicUrlIsValid() {
+        $this->assertEquals('https://parallelum.com.br/fipe/api/v1/', IFipe::URL);
     }
 }
