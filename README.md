@@ -3,7 +3,7 @@
 
 API de Consulta Tabela FIPE fornece preços médios de veículos no mercado nacional através de um serviço RESTful HTTP Json. Atualizada mensalmente com dados extraidos da tabela FIPE
 
-A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar um cerveja? 🍺
+A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma cerveja? 🍺
 
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
