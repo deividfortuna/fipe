@@ -67,8 +67,9 @@ abstract class IFipe
     }
 
     /**
-     * Update the cURL Default Options
-     * @param  array  $config
+     * Update the cURL Default Options.
+     *
+     * @param array $config
      */
     public static function setCurlOptions(array $config = [])
     {
