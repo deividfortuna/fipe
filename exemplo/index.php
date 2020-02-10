@@ -2,11 +2,17 @@
 require '../vendor/autoload.php';
 
 use DeividFortuna\Fipe\FipeCarros;
+use DeividFortuna\Fipe\IFipe;
 
 try {
     $codMarca = filter_input(INPUT_GET, 'codMarca');
     $codModelo = filter_input(INPUT_GET, 'codModelo');
     $codAno = filter_input(INPUT_GET, 'codAno');
+
+    IFipe::setCurlOptions([
+        CURLOPT_TIMEOUT        => 10,
+        CURLOPT_CONNECTTIMEOUT => 10,
+    ]);
 
     $marcas = FipeCarros::getMarcas();
     if ($codMarca) {
