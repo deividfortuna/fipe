@@ -50,7 +50,8 @@ class FipeTest extends PHPUnit
         $this->assertEquals(false, $veiculo);
     }
 
-    public function basicUrlIsValid() {
+    public function basicUrlIsValid()
+    {
         $this->assertEquals('https://parallelum.com.br/fipe/api/v1/', IFipe::URL);
     }
 }
