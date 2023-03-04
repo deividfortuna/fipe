@@ -7,6 +7,9 @@ A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma
 
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
+## API Status
+http://parallelum.com.br/fipe/status
+
 ## IMPORTANTE
 26/03/2017: Mudança de servidor. URL base alterada para: `https://parallelum.com.br/fipe/api/v1`
 
