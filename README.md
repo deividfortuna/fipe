@@ -1,6 +1,5 @@
 # FipeLib
 > Biblioteca em PHP para consultar a tabela Fipe :moneybag:
-
 API de Consulta Tabela FIPE fornece preços médios de veículos no mercado nacional através de um serviço RESTful HTTP Json. Atualizada mensalmente com dados extraidos da tabela FIPE
 
 A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma cerveja? 🍺
@@ -8,19 +7,10 @@ A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma
 [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
 ## API Status
-http://parallelum.com.br/fipe/status
-
-## IMPORTANTE
-26/03/2017: Mudança de servidor. URL base alterada para: `https://parallelum.com.br/fipe/api/v1`
-
-13/10/2017: A API foi movida para um servidor privado
-
-06/10/2017: Infelizmente a Red Hat retirou os servidores gratuitos que eram utilizados do ar, até que eu encontre um novo servidor gratuito o serviço vai ficar indisponível.
-
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792332790-ff28744d182f8df575324136?style=for-the-badge&label=Fipe%20API)](http://parallelum.com.br/fipe/status) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792381741-24bdd8f165658ec9e85edea8?style=for-the-badge&label=Fipe.org%20(Official%20Website))](http://parallelum.com.br/fipe/status)
 
 
 ## API utilizada
-
 A documentação da API utilizada pela biblioteca para obter os dados da Fipe está disponível [neste link](http://deividfortuna.github.io/fipe/) e também pode ser encontrada no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
 
 ## Classes e métodos
