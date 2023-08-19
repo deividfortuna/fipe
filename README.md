@@ -11,7 +11,7 @@ A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma
 
 
 ## API utilizada
-A documentação da API utilizada pela biblioteca para obter os dados da Fipe está disponível [neste link](http://deividfortuna.github.io/fipe/) e também pode ser encontrada no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
+A documentação da API utilizada pela biblioteca para obter os dados da Fipe está disponível [neste link](http://deividfortuna.github.io/fipe/v2/) e também pode ser encontrada no branch [gh-pages](https://github.com/deividfortuna/fipe/tree/gh-pages) deste repositório.
 
 ## Classes e métodos
 A biblioteca possui 3 classes para consultar a tabela Fipe, uma para cada tipo de veículo, são elas:
