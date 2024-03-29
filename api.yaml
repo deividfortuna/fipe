@@ -1,0 +1,209 @@
+swagger: "2.0"
+info:
+  description: "API de Consulta Tabela FIPE fornece preços médios de veículos no mercado nacional. Atualizada mensalmente com dados extraidos da tabela FIPE"
+  version: "1.0.0"
+  title: "Fipe API"
+  contact:
+    email: "deividfortuna@gmail.com"
+  license:
+    name: "MIT"
+    url: "https://github.com/deividfortuna/fipe/blob/master/LICENSE.md"
+host: "parallelum.com.br"
+basePath: "/fipe/api/v1"
+schemes:
+  - "https"
+  - "http"
+tags:
+  - name: "Fipe"
+
+paths:
+  /referencias:
+    get:
+      tags:
+        - "Fipe"
+      summary: "Fipe month references"
+      description: "Returns a list with all month and code reference from Fipe"
+      operationId: "GetReferences"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Ok"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Reference"
+        "500":
+          description: "Server Error"
+  /{type}/marcas:
+    get:
+      tags:
+        - "Fipe"
+      summary: "Brands by type"
+      description: "Returns a list of brands for the type of vehicle"
+      operationId: "GetBrandsByType"
+      produces:
+        - "application/json"
+      parameters:
+        - $ref: '#/parameters/type'
+      responses:
+        "200":
+          description: "Ok"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/NamedCode"
+        "404":
+          description: "Not found"
+  /{type}/marcas/{brandId}/modelos:
+    get:
+      tags:
+        - "Fipe"
+      summary: "Models by brand"
+      description: "Returns a list of models for the brand"
+      operationId: "GetModelsByBrand"
+      produces:
+        - "application/json"
+      parameters:
+        - $ref: '#/parameters/type'
+        -  $ref: '#/parameters/brandId'
+
+      responses:
+        "200":
+          description: "Ok"
+          schema:
+            $ref: "#/definitions/ModelYear"
+        "404":
+          description: "Not found"
+
+  /{type}/marcas/{brandId}/modelos/{modelId}/anos:
+    get:
+      tags:
+        - "Fipe"
+      summary: "Years for model"
+      description: "Returns a list of year for the specific model"
+      operationId: "GetYearByModel"
+      produces:
+        - "application/json"
+      parameters:
+        - $ref: '#/parameters/type'
+        - $ref: '#/parameters/brandId'
+        - $ref: '#/parameters/modelId'
+
+      responses:
+        "200":
+          description: "Ok"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/NamedCode"
+        "404":
+          description: "Not found"
+
+  /{type}/marcas/{brandId}/modelos/{modelId}/anos/{yearId}:
+    get:
+      tags:
+        - "Fipe"
+      summary: "Fipe info"
+      description: "Returns the Fipe information for the vehicle (price estimation)"
+      operationId: "GetFipeInfo"
+      produces:
+        - "application/json"
+      parameters:
+        - $ref: '#/parameters/type'
+        - $ref: '#/parameters/brandId'
+        - $ref: '#/parameters/modelId'
+        - $ref: '#/parameters/yearId'
+        - name: "referencia"
+          in: query
+          required: false
+          type: integer
+          description: "Month reference code"
+      responses:
+        "200":
+          description: "Ok"
+          schema:
+            $ref: "#/definitions/FipeResult"
+        "404":
+          description: "Not found"
+
+definitions:
+  FipeResult:
+    type: "object"
+    properties:
+      Valor:
+        type: "string"
+      Marca:
+        type: "string"
+      Modelo:
+        type: "string"
+      AnoModelo:
+        type: "integer"
+      Combustivel:
+        type: "string"
+      CodigoFipe:
+        type: "string"
+      MesReferencia:
+        type: "string"
+      TipoVeiculo:
+        type: "integer"
+      SiglaCombustivel:
+        type: "string"
+  ModelYear:
+    type: "object"
+    properties:
+      anos:
+        type: "array"
+        items:
+          $ref: "#/definitions/NamedCode"
+      modelos:
+        type: "array"
+        items:
+          $ref: "#/definitions/NamedCode"
+  NamedCode:
+    type: "object"
+    properties:
+      nome:
+        type: "string"
+      codigo:
+        type: "string"
+  Reference:
+    type: "object"
+    properties:
+      codigo:
+        type: "string"
+      mes:
+        type: "string"
+
+parameters:
+  type:
+    name: "type"
+    in: "path"
+    description: "Type of vehicle"
+    required: true
+    type: "string"
+    enum:
+      - carros
+      - motos
+      - caminhoes
+  brandId:
+    name: "brandId"
+    in: "path"
+    description: "Brand of the vehicle"
+    required: true
+    type: "integer"
+  modelId:
+    name: "modelId"
+    in: "path"
+    description: "Model of the vehicle"
+    required: true
+    type: "integer"
+  yearId:
+    name: "yearId"
+    in: "path"
+    description: "Year for the vehicle"
+    required: true
+    type: "integer"
+externalDocs:
+  description: "Read more about FIPE API"
+  url: "https://github.com/deividfortuna/fipe"
