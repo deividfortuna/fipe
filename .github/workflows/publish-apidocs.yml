@@ -20,7 +20,7 @@ jobs:
           echo "Publishing API docs..."
           curl -o api.json https://fipe.parallelum.dev/swagger/doc.json
           ls -a
-          docker run --rm -v $PWD:/spec redocly/cli build-docs doc.json -t ./custom.hbs -o index.html
+          docker run --rm -v $PWD:/spec redocly/cli build-docs api.json -t ./custom.hbs -o index.html
 
       - name: Display changes
         run: |
