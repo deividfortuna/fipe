@@ -1,0 +1,47 @@
+theme:
+  openapi:
+    generateCodeSamples:
+      languages:
+        - lang: curl
+    theme:
+      codeBlock:
+        borderRadius: '8'
+      typography:
+        fontSize: 16px
+        fontFamily: Roboto Mono, Roboto, sans-serif
+        optimizeSpeed: true
+        smoothing: antialiased
+        headings:
+          fontWeight: bold
+          lineHeight: 2em
+        code:
+          fontWeight: '600'
+          color: rgba(92, 62, 189, 1)
+          wrap: true
+        links:
+          color: rgb(35, 35, 191)
+          visited: rgb(35, 35, 191)
+          hover: rgb(86, 86, 186)
+      sidebar:
+        width: 300px
+        textColor: "#000000"
+      rightPanel:
+        backgroundColor: rgb(44, 40, 76)
+        textColor: "#ffffff"
+      colors:
+        primary:
+          main: rgb(35, 35, 191)
+          light: rgba(246, 20, 63, 0.42)
+        success:
+          main: rgba(28, 184, 65, 1)
+          light: "#81ec9a"
+          dark: "#083312"
+          contrastText: "#000"
+        text:
+          primary: rgba(0, 0, 0, 1)
+          secondary: "#4d4d4d"
+        http:
+          get: rgba(0, 200, 219, 1)
+          post: rgba(28, 184, 65, 1)
+          put: rgba(255, 187, 0, 1)
+          delete: rgba(254, 39, 35, 1)
