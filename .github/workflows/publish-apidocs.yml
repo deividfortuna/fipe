@@ -15,10 +15,11 @@ jobs:
           ref: gh-pages
 
       - name: Publish API docs
+        working-directory: v2
         run: |
           echo "Publishing API docs..."
-          cd v2
           curl -o api.json https://fipe.parallelum.dev/swagger/doc.json
+          ls -a
           docker run --rm -v $PWD:/spec redocly/cli build-docs doc.json -t ./custom.hbs -o index.html
 
       - name: Display changes
