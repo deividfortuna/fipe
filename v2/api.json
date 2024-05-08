@@ -6,7 +6,7 @@
         "title": "Fipe API",
         "contact": {
             "name": "Deivid Fortuna",
-            "url": "https://deividfortuna.github.io/fipe/v2/",
+            "url": "https://fipe.online",
             "email": "deividfortuna@gmail.com"
         },
         "license": {
@@ -32,6 +32,15 @@
                 ],
                 "summary": "Fipe month references",
                 "operationId": "GetReferences",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "OK",
@@ -72,6 +81,13 @@
                 "summary": "Brands by type",
                 "operationId": "GetBrandsByType",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -133,6 +149,13 @@
                 "summary": "Get vehicle models by brand",
                 "operationId": "GetModelsByBrand",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -202,6 +225,13 @@
                 "summary": "Get years by model",
                 "operationId": "GetYearsByModel",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -279,6 +309,13 @@
                 "summary": "Fipe info",
                 "operationId": "GetFipeInfo",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -362,6 +399,13 @@
                 "operationId": "GetYearsByBrand",
                 "parameters": [
                     {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
+                    {
                         "enum": [
                             "cars",
                             "motorcycles",
@@ -430,6 +474,13 @@
                 "summary": "Get vehicle models by brand and year",
                 "operationId": "GetYearByModel",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -508,6 +559,13 @@
                 "operationId": "GetYearsByFipeCode",
                 "parameters": [
                     {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
+                    {
                         "enum": [
                             "cars",
                             "motorcycles",
@@ -576,6 +634,13 @@
                 "summary": "Get vehicle details by FIPE code",
                 "operationId": "GetInfoByFipeCode",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -650,6 +715,13 @@
                 "summary": "Get vehicle history by FIPE code",
                 "operationId": "GetHistoryByFipeCode",
                 "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Subscription token (https://fipe.online)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
                     {
                         "enum": [
                             "cars",
@@ -850,6 +922,6 @@
     },
     "externalDocs": {
         "description": "Read more about FIPE API",
-        "url": "https://github.com/deividfortuna/fipe"
+        "url": "https://fipe.online"
     }
 }
