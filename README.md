@@ -1,10 +1,13 @@
 # FipeLib
-> Biblioteca em PHP para consultar a tabela Fipe :moneybag:
+ Biblioteca em PHP para consultar a tabela Fipe :moneybag:
 API de Consulta Tabela FIPE fornece preços médios de veículos no mercado nacional através de um serviço RESTful HTTP Json. Atualizada mensalmente com dados extraidos da tabela FIPE
 
-A API está online desde 2015 e totalmente gratuíta. O que acha de me pagar uma cerveja? 🍺
+>[!IMPORTANT] 
+> Após quase 10 anos de manutenção, atualizações e fornecimento totalmente gratuito e ilimitado, tive que tomar a decisão de colocar um limite de uso na API.
+> A partir de agora, a API será limitada a **500 requisições gratuitas e não autenticadas** por dia (24h). Se você criar um token de acesso [aqui](https://fipe.online/register), poderá fazer até **1000 requisições** por dia (24h).
+>
+> Caso você precise de **requisições ilimitadas** e acesso a 1 ano de histórico de preços, considere contratar um plano de suporte através do site [fipe.online](https://fipe.online/pricing).
 
-[![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G)
 
 ## API Status
 [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792332790-ff28744d182f8df575324136?style=for-the-badge&label=Fipe%20API)](http://parallelum.com.br/fipe/status) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792381741-24bdd8f165658ec9e85edea8?style=for-the-badge&label=Fipe.org%20(Official%20Website))](http://parallelum.com.br/fipe/status)
