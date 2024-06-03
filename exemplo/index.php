@@ -9,12 +9,17 @@ try {
     $codModelo = filter_input(INPUT_GET, 'codModelo');
     $codAno = filter_input(INPUT_GET, 'codAno');
 
+// Caso você tenha um token de assinatura, pode passá-lo como um cabeçalho HTTP
+//    $token = 'SEU_TOKEN_AQUI';
+
     IFipe::setCurlOptions([
-        CURLOPT_TIMEOUT        => 10,
+        CURLOPT_TIMEOUT => 10,
         CURLOPT_CONNECTTIMEOUT => 10,
+//        CURLOPT_HTTPHEADER => ["X-Subscription-Token:$token"]
     ]);
 
     $marcas = FipeCarros::getMarcas();
+
     if ($codMarca) {
         $modelos = FipeCarros::getModelos($codMarca);
         $modelos = $modelos['modelos'];
@@ -38,7 +43,7 @@ try {
     }
 } catch (Exception $e) {
     header('Content-Type: text/html; charset=utf-8');
-    die('ERRO: '.$e->getMessage());
+    die('ERRO: ' . $e->getMessage());
 }
 ?>
 <!DOCTYPE html>
@@ -59,8 +64,8 @@ try {
 </style>
 <body>
 <p>Exemplo de consulta de carros na Fipe<?php if (!$codMarca) {
-    echo ', clique em uma marca para iniciar';
-} ?>.</p>
+        echo ', clique em uma marca para iniciar';
+    } ?>.</p>
 <table>
     <tr>
         <td valign="top">
