@@ -32,8 +32,22 @@ Cada classe possui os seguintes métodos:
 Veja um exemplo de como consultar as marcas de carros:
 ~~~php
 <?php
-
 use DeividFortuna\Fipe\FipeCarros;
+
+$marcas = FipeCarros::getMarcas();
+
+var_dump($marcas);
+~~~
+
+Utilizando o token de acesso para aumentar o limite de requisições:
+~~~php
+<?php
+use DeividFortuna\Fipe\FipeCarros;
+
+$token = 'SEU_TOKEN';
+IFipe::setCurlOptions([
+    CURLOPT_HTTPHEADER => ["X-Subscription-Token:$token"]
+]);
 
 $marcas = FipeCarros::getMarcas();
 
