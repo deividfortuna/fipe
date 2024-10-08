@@ -18,7 +18,7 @@ jobs:
         working-directory: v2
         run: |
           echo "Publishing API docs..."
-          curl -o api.json https://fipe.parallelum.dev/swagger/doc.json
+          curl -o api.json https://fipe.parallelum.com.br/swagger/doc.json
           ls -a
           docker run --rm -v $PWD:/spec redocly/cli build-docs api.json -t ./custom.hbs -o index.html
 
