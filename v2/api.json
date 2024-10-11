@@ -1,5 +1,5 @@
 {
-    "schemes": ["https","http"],
+    "schemes": ["https"],
     "swagger": "2.0",
     "info": {
         "description": "API de consulta Tabela FIPE fornece preços médios de veículos no mercado nacional. Atualizada mensalmente com dados extraidos da tabela FIPE. \n\nEssa API Fipe utiliza banco de dados próprio, onde todas as requisições acontecem internamente, sem sobrecarregar o Web Service da Fipe, evitando assim bloqueios por múltiplos acessos. \n\nA API está online desde 2015 e totalmente gratuíta. Gostaria que ele continuasse gratuíta? O que acha de me pagar uma cerveja? 🍺 \n\n [![Make a donation](https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QUPMYWH6XAC5G) \n ### Fipe API SDKs\n - [Fipe Go SDK](https://pkg.go.dev/github.com/parallelum/fipe-go)\n - [Fipe .NetCore Nuget SDK](https://www.nuget.org/packages/Br.Com.Parallelum.Fipe/)\n - [Fipe Javascript SDK](https://github.com/deividfortuna/fipe-promise)\n ",
