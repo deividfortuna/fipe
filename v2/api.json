@@ -53,15 +53,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -121,15 +117,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -197,15 +189,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -281,15 +269,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -370,15 +354,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -446,15 +426,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -530,15 +506,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -606,15 +578,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -687,15 +655,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
@@ -768,15 +732,11 @@
                     },
                     "404": {
                         "description": "Not Found",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     },
                     "500": {
                         "description": "Internal Server Error",
-                        "schema": {
-                            "type": "object"
-                        }
+                        "schema": {}
                     }
                 }
             }
