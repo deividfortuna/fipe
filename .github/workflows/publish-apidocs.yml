@@ -3,6 +3,7 @@ name: Publish API docs
 on:
   repository_dispatch:
     types: [trigger-worflow]
+  workflow_dispatch:
 
 jobs:
   publish:
@@ -14,13 +15,19 @@ jobs:
         with:
           ref: gh-pages
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
       - name: Publish API docs
         working-directory: v2
         run: |
           echo "Publishing API docs..."
           curl -o api.json https://fipe.parallelum.com.br/swagger/doc.json
+          npx snippet-enricher-cli --input=api.json --targets=node_request,php_curl,go_native,csharp_httpclient,javascript_xhr,java_okhttp  > api-with-examples.json
           ls -a
-          docker run --rm -v $PWD:/spec redocly/cli build-docs api.json -t ./custom.hbs -o index.html
+          docker run --rm -v $PWD:/spec redocly/cli build-docs api-with-examples.json -t ./custom.hbs -o index.html
 
       - name: Display changes
         run: |
