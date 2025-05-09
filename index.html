@@ -64,16 +64,17 @@
     </div>
     <p class="lead">Você pode usar a biblioteca em PHP desenvolvida para consumir a API <a
             href="https://github.com/deividfortuna/fipe">https://github.com/deividfortuna/fipe</a>.</p>
-    <div>
-        <p>A API está <strong>online desde 2015 e totalmente gratuíta</strong>. O que acha de me pagar um cerveja? 🍺</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="QUPMYWH6XAC5G">
-            <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0"
-                   name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-        </form>
-    </div>
+    
+      <div class="alert alert-warning" role="alert">
+        <strong>ATENÇÃO:</strong> A versão <b>2.0</b> da API foi lançada, com novas funcionalidades e melhorias. Apesar da v1 continuar disponível, recomendamos a migração para a v2, que traz uma estrutura mais robusta, eficiente e com novas funcionalidades. Acesse a documentação da v2 em <a href="https://deividfortuna.github.io/fipe/v2">https://deividfortuna.github.io/fipe/v2</a> para mais informações.
+      </div>
+      <div class="alert alert-info" role="alert">
+        Após mais de 10 anos de manutenção, atualizações e fornecimento totalmente gratuito e ilimitado, tive que tomar a decisão de colocar um limite de uso na API. 
+        A partir de agora, a API será limitada a <b>500 requisições gratuitas não autenticadas</b> por dia (24h). 
+        Se você criar um token de acesso <a href="https://fipe.online/register">gratuito aqui</a>, poderá fazer até <b>1000 requisições</b> por dia (24h).<br/>
+        <br/>
+        Caso você precise de <b>requisições ilimitadas</b> e acesso a 1 ano de histórico de preços, considere contratar um plano de suporte através do site <a href="https://fipe.online">fipe.online</a>.
+      </div>
     <p>A API disponibiliza seus dados de busca no formato JSON. Confira a URL base de acesso a API:</p>
     <p><code>https://parallelum.com.br/fipe/api/v1</code></p>
     <h4>
