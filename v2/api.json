@@ -91,6 +91,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -99,6 +100,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -155,6 +157,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -163,6 +166,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 59,
                         "example": 59,
                         "description": "ID da marca",
                         "name": "brandId",
@@ -171,6 +175,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -227,6 +232,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -235,6 +241,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 59,
                         "example": 59,
                         "description": "ID da marca",
                         "name": "brandId",
@@ -243,6 +250,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 5940,
                         "example": 5940,
                         "description": "ID do modelo",
                         "name": "modelId",
@@ -251,6 +259,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -307,6 +316,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -315,6 +325,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 59,
                         "example": 59,
                         "description": "ID da marca",
                         "name": "brandId",
@@ -323,6 +334,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 5940,
                         "example": 5940,
                         "description": "ID do modelo",
                         "name": "modelId",
@@ -331,6 +343,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "2014-3",
                         "example": "2014-3",
                         "description": "Ano",
                         "name": "yearId",
@@ -339,6 +352,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -392,6 +406,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -400,6 +415,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 59,
                         "example": 59,
                         "description": "ID da marca",
                         "name": "brandId",
@@ -408,6 +424,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -464,6 +481,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -472,6 +490,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 59,
                         "example": 59,
                         "description": "ID da marca",
                         "name": "brandId",
@@ -480,6 +499,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "2014-3",
                         "example": "2014-3",
                         "description": "Ano",
                         "name": "yearId",
@@ -488,6 +508,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -544,6 +565,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -552,6 +574,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "004278-1",
                         "example": "004278-1",
                         "description": "Código FIPE",
                         "name": "fipeCode",
@@ -560,6 +583,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -616,6 +640,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -624,6 +649,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "004278-1",
                         "example": "004278-1",
                         "description": "Código FIPE",
                         "name": "fipeCode",
@@ -632,6 +658,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "2014-3",
                         "example": "2014-3",
                         "description": "Ano",
                         "name": "yearId",
@@ -640,6 +667,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
@@ -693,6 +721,7 @@
                             "trucks"
                         ],
                         "type": "string",
+                        "default": "cars",
                         "example": "cars",
                         "description": "Tipo de veículo",
                         "name": "vehicleType",
@@ -701,6 +730,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "004278-1",
                         "example": "004278-1",
                         "description": "Código FIPE",
                         "name": "fipeCode",
@@ -709,6 +739,7 @@
                     },
                     {
                         "type": "string",
+                        "default": "2014-3",
                         "example": "2014-3",
                         "description": "Ano",
                         "name": "yearId",
@@ -717,6 +748,7 @@
                     },
                     {
                         "type": "integer",
+                        "default": 278,
                         "example": 278,
                         "description": "Mês e ano de referência",
                         "name": "reference",
