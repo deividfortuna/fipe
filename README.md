@@ -4,9 +4,9 @@ API de Consulta Tabela FIPE fornece preços médios de veículos no mercado naci
 
 >[!IMPORTANT] 
 > Após quase 10 anos de manutenção, atualizações e fornecimento totalmente gratuito e ilimitado, tive que tomar a decisão de colocar um limite de uso na API.
-> A partir de agora, a API será limitada a **500 requisições gratuitas e não autenticadas** por dia (24h). Se você criar um token de acesso [aqui](https://fipe.online/register), poderá fazer até **1000 requisições** por dia (24h).
+> A partir de agora, a API será limitada a **500 requisições gratuitas e não autenticadas** por dia (24h). Se você criar um token de acesso [aqui](https://fipe.api.br/register), poderá fazer até **1000 requisições** por dia (24h).
 >
-> Caso você precise de **requisições ilimitadas** e acesso a 1 ano de histórico de preços, considere contratar um plano de suporte através do site [fipe.online](https://fipe.online/pricing).
+> Caso você precise de **requisições ilimitadas** e acesso a 1 ano de histórico de preços, considere contratar um plano de suporte através do site [fipe.api.br](https://fipe.api.br/pricing).
 
 
 ## API Status
