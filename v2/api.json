@@ -2,11 +2,11 @@
     "schemes": ["https"],
     "swagger": "2.0",
     "info": {
-        "description": "A API de consulta da Tabela FIPE fornece preços médios de veículos no mercado nacional. É atualizada mensalmente com dados extraídos da tabela FIPE.\n\nEsta API da FIPE utiliza um banco de dados próprio, onde todas as requisições acontecem internamente, sem sobrecarregar o Web Service da FIPE, evitando assim bloqueios por múltiplos acessos.\n\nA API está online desde 2015 e é totalmente gratuita, fornecendo dados de veículos, motos e caminhões. Embora a API seja gratuita, ela é limitada a 500 requisições não autenticadas por dia (24h). Se você criar um token de acesso [gratuito aqui](https://fipe.online/register), poderá fazer até 1.000 requisições por dia (24h).\n\nCaso você precise de **requisições ilimitadas** e acesso a **1 ano de histórico de preços**, além de **download completo em CSV**, considere contratar um plano de suporte por meio do site [fipe.online](fipe.online).",
+        "description": "A API de consulta da Tabela FIPE fornece preços médios de veículos no mercado nacional. É atualizada mensalmente com dados extraídos da tabela FIPE.\n\nEsta API da FIPE utiliza um banco de dados próprio, onde todas as requisições acontecem internamente, sem sobrecarregar o Web Service da FIPE, evitando assim bloqueios por múltiplos acessos.\n\nA API está online desde 2015 e é totalmente gratuita, fornecendo dados de veículos, motos e caminhões. Embora a API seja gratuita, ela é limitada a 500 requisições não autenticadas por dia (24h). Se você criar um token de acesso [gratuito aqui](https://fipe.api.br/register), poderá fazer até 1.000 requisições por dia (24h).\n\nCaso você precise de **requisições ilimitadas** e acesso a **1 ano de histórico de preços**, além de **download completo em CSV**, considere contratar um plano de suporte por meio do site [fipe.api.br](https://fipe.api.br).\n",
         "title": "Fipe API",
         "contact": {
             "name": "Deivid Fortuna",
-            "url": "https://fipe.online",
+            "url": "https://fipe.api.br",
             "email": "deividfortuna@gmail.com"
         },
         "license": {
@@ -36,7 +36,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     }
@@ -84,7 +84,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -154,7 +154,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -233,7 +233,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -321,7 +321,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -415,7 +415,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -494,7 +494,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -582,7 +582,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -661,7 +661,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -746,7 +746,7 @@
                     {
                         "type": "string",
                         "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
-                        "description": "Token de assinatura (https://fipe.online)",
+                        "description": "Token de assinatura (https://fipe.api.br)",
                         "name": "X-Subscription-Token",
                         "in": "header"
                     },
@@ -954,6 +954,6 @@
     },
     "externalDocs": {
         "description": "Read more about FIPE API",
-        "url": "https://fipe.online"
+        "url": "https://fipe.api.br"
     }
 }
