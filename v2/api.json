@@ -18,6 +18,64 @@
     "host": "fipe.parallelum.com.br",
     "basePath": "/api/v2",
     "paths": {
+        "/plates/{plate}": {
+            "get": {
+                "description": "Retorna os dados do veículo e os preços FIPE para uma placa. Sem token: 15 consultas por mês. Token gratuito: 30 consultas com sucesso por mês. Assinatura paga: ilimitado. Os cabeçalhos X-Plate-Quota-Limit e X-Plate-Quota-Remaining mostram a cota do mês.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Busca por placa"
+                ],
+                "summary": "Consulta por placa",
+                "operationId": "GetVehicleByPlate",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZW1haWwiOiJleGFtcGxlLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.CmNu23cNxIhxZa9TABqIPD2t3Ja6Vmu_B0l2DJfiIaA",
+                        "description": "Token de assinatura (https://fipe.api.br)",
+                        "name": "X-Subscription-Token",
+                        "in": "header"
+                    },
+                    {
+                        "type": "string",
+                        "default": "ABC1234",
+                        "example": "ABC1D23",
+                        "description": "Placa no formato antigo ou Mercosul",
+                        "name": "plate",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/domain.PlateVehicle"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {}
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {}
+                    },
+                    "429": {
+                        "description": "Too Many Requests",
+                        "schema": {}
+                    },
+                    "503": {
+                        "description": "Service Unavailable",
+                        "schema": {}
+                    }
+                }
+            }
+        },
         "/references": {
             "get": {
                 "description": "Retorna as referências de meses e códigos da Fipe",
@@ -815,6 +873,103 @@
         }
     },
     "definitions": {
+        "domain.PlateFipePrice": {
+            "type": "object",
+            "properties": {
+                "codeFipe": {
+                    "description": "Código FIPE",
+                    "type": "string",
+                    "example": "005102-0"
+                },
+                "model": {
+                    "description": "Modelo na tabela FIPE",
+                    "type": "string",
+                    "example": "Santana CS/CD/CG"
+                },
+                "price": {
+                    "description": "Preço em Real brasileiro",
+                    "type": "string",
+                    "example": "R$ 8.848,00"
+                }
+            }
+        },
+        "domain.PlateVehicle": {
+            "type": "object",
+            "properties": {
+                "brand": {
+                    "description": "Marca do veículo",
+                    "type": "string",
+                    "example": "Volkswagen"
+                },
+                "chassis": {
+                    "description": "Chassi com os primeiros caracteres ocultos",
+                    "type": "string",
+                    "example": "*****P246344"
+                },
+                "city": {
+                    "description": "Município do registro",
+                    "type": "string",
+                    "example": "LOBATO"
+                },
+                "color": {
+                    "description": "Cor do veículo",
+                    "type": "string",
+                    "example": "Vermelha"
+                },
+                "fetchedAt": {
+                    "description": "Data em que os dados foram obtidos da fonte",
+                    "type": "string",
+                    "example": "2026-10-23T22:40:19.849Z"
+                },
+                "fipePrices": {
+                    "description": "Preços FIPE para os modelos do veículo",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/domain.PlateFipePrice"
+                    }
+                },
+                "fuel": {
+                    "description": "Combustível",
+                    "type": "string",
+                    "example": "Álcool"
+                },
+                "imported": {
+                    "description": "Veículo importado",
+                    "type": "boolean",
+                    "example": false
+                },
+                "model": {
+                    "description": "Modelo do veículo",
+                    "type": "string",
+                    "example": "SANTANA CG"
+                },
+                "plate": {
+                    "description": "Placa normalizada",
+                    "type": "string",
+                    "example": "ABC1234"
+                },
+                "power": {
+                    "description": "Potência do motor",
+                    "type": "string",
+                    "example": "94 cv"
+                },
+                "segment": {
+                    "description": "Segmento do veículo",
+                    "type": "string",
+                    "example": "Auto"
+                },
+                "state": {
+                    "description": "Unidade federativa do registro",
+                    "type": "string",
+                    "example": "PR"
+                },
+                "year": {
+                    "description": "Ano do veículo",
+                    "type": "string",
+                    "example": "1986"
+                }
+            }
+        },
         "domain.PriceHistory": {
             "type": "object",
             "properties": {
