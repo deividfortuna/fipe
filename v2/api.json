@@ -20,7 +20,7 @@
     "paths": {
         "/plates/{plate}": {
             "get": {
-                "description": "**Alpha**: este endpoint está em fase de testes e pode mudar. Retorna os dados do veículo e os preços FIPE para uma placa. Sem token: 15 consultas por mês. Token gratuito: 30 consultas com sucesso por mês. Assinatura paga: ilimitado. Os cabeçalhos X-Plate-Quota-Limit e X-Plate-Quota-Remaining mostram a cota do mês.",
+                "description": "**Alpha**: este endpoint está em fase de testes e pode mudar. Retorna os dados do veículo e os preços FIPE para uma placa. Sem token: 5 consultas por mês. Token gratuito: 10 consultas com sucesso por mês. Assinatura paga: 500 consultas com sucesso por mês. Os cabeçalhos X-Plate-Quota-Limit e X-Plate-Quota-Remaining mostram a cota do mês.",
                 "consumes": [
                     "application/json"
                 ],
